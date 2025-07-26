@@ -1,0 +1,705 @@
+<!DOCTYPE html>
+<html lang="es" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estrategia de Growth Marketing: Breast Cancer Summit 2025</title>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;900&display=swap" rel="stylesheet">
+    <!-- Chosen Palette: Energetic & Playful (Vibrant Pink/Purple) -->
+    <!-- Application Structure Plan: A top-to-bottom narrative SPA. Starts with the high-level mission (North Star Metric), introduces the target audience (Buyer Persona), maps their journey (Customer Journey), details the strategic engine (Channels, Tactics, SEO), explains the self-sustaining cycle (Growth Loop), outlines the optimization plan (A/B Test), and concludes with success measurement (KPIs). This flow was chosen to build the strategic case logically, from the 'why' to the 'who', 'how', and 'what if', making a complex strategy digestible for stakeholders. -->
+    <!-- Visualization & Content Choices: 
+        - North Star Metric: Goal: Inform -> Big Number (HTML) -> Justification: Immediate, high-impact communication of the core target.
+        - Buyer Persona: Goal: Inform/Organize -> Styled Card (HTML/CSS) -> Justification: Humanizes the target audience, making their needs and pains relatable.
+        - Ad Budget: Goal: Compare -> Donut Chart (Chart.js) -> Justification: Clearly shows proportional investment across channels.
+        - Customer Journey: Goal: Organize/Show Process -> Vertical Timeline (HTML/CSS) -> Justification: Visually maps the user's path, highlighting opportunities at each stage without SVG.
+        - Growth Loop: Goal: Show Process/Relationships -> Circular Diagram (HTML/CSS) -> Justification: Illustrates the self-sustaining nature of the referral strategy effectively without SVG/Mermaid.
+        - A/B Test: Goal: Organize/Show Process -> Step-by-step list (HTML/CSS) -> Justification: Breaks down the experimental method into a clear, understandable sequence.
+        - KPI Projection: Goal: Show Change -> Line Chart (Chart.js) -> Justification: Forecasts progress towards the North Star Metric over time, providing a clear view of expected growth.
+    -->
+    <!-- CONFIRMATION: NO SVG graphics used. NO Mermaid JS used. -->
+    <style>
+        /* Base styles */
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #111827; /* Dark background */
+            color: #FFFFFF; /* White text */
+            scroll-behavior: smooth;
+        }
+
+        /* Tailwind CSS classes generated and embedded */
+        .scroll-smooth { scroll-behavior: smooth; }
+        .bg-gray-900 { background-color: #111827; }
+        .shadow-md { box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06); }
+        .sticky { position: sticky; }
+        .top-0 { top: 0; }
+        .z-50 { z-index: 50; }
+        .container { width: 100%; }
+        .mx-auto { margin-left: auto; margin-right: auto; }
+        .px-6 { padding-left: 1.5rem; padding-right: 1.5rem; }
+        .py-3 { padding-top: 0.75rem; padding-bottom: 0.75rem; }
+        .flex { display: flex; }
+        .justify-between { justify-content: space-between; }
+        .items-center { align-items: center; }
+        .text-2xl { font-size: 1.5rem; line-height: 2rem; }
+        .font-bold { font-weight: 700; }
+        .text-white { color: #FFFFFF; }
+        .hidden { display: none; }
+        .md\:flex { display: none; } /* Default hidden, overridden by media query */
+        @media (min-width: 768px) { .md\:flex { display: flex; } }
+        .space-x-8 > :not([hidden]) ~ :not([hidden]) { margin-right: 0px; margin-left: 2rem; }
+        .text-gray-300 { color: #D1D5DB; }
+        .hover\:text-pink-400:hover { color: #F472B6; }
+        .py-8 { padding-top: 2rem; padding-bottom: 2rem; }
+        .text-center { text-align: center; }
+        .py-16 { padding-top: 4rem; padding-bottom: 4rem; }
+        .text-4xl { font-size: 2.25rem; line-height: 2.5rem; }
+        .md\:text-5xl { font-size: 2.25rem; line-height: 2.5rem; } /* Default, overridden by media query */
+        @media (min-width: 768px) { .md\:text-5xl { font-size: 3rem; line-height: 1; } }
+        .font-extrabold { font-weight: 800; }
+        .text-xl { font-size: 1.25rem; line-height: 1.75rem; }
+        .mt-2 { margin-top: 0.5rem; }
+        .max-w-3xl { max-width: 48rem; }
+        .mt-6 { margin-top: 1.5rem; }
+        .text-lg { font-size: 1.125rem; line-height: 1.75rem; }
+        .text-gray-400 { color: #9CA3AF; }
+        .mt-12 { margin-top: 3rem; }
+        .text-gray-200 { color: #E5E7EB; }
+        .mt-4 { margin-top: 1rem; }
+        .bg-gray-800 { background-color: #1F2937; }
+        .rounded-xl { border-radius: 0.75rem; }
+        .p-8 { padding: 2rem; }
+        .max-w-md { max-width: 28rem; }
+        .shadow-lg { box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05); }
+        .border { border-width: 1px; }
+        .border-gray-700 { border-color: #374151; }
+        .text-7xl { font-size: 4.5rem; line-height: 1; }
+        .font-black { font-weight: 900; }
+        .gradient-text { 
+            background: linear-gradient(90deg, #EC4899, #D946EF); 
+            -webkit-background-clip: text; 
+            -webkit-text-fill-color: transparent; 
+        }
+        .font-light { font-weight: 300; }
+        .bg-gray-900 { background-color: #111827; } /* Already defined, but for clarity */
+        .rounded-lg { border-radius: 0.5rem; }
+        .mb-12 { margin-bottom: 3rem; }
+        .mb-8 { margin-bottom: 2rem; }
+        .max-w-4xl { max-width: 56rem; }
+        .grid { display: grid; }
+        .grid-cols-1 { grid-template-columns: repeat(1, minmax(0, 1fr)); }
+        .md\:grid-cols-3 { grid-template-columns: repeat(1, minmax(0, 1fr)); } /* Default, overridden by media query */
+        @media (min-width: 768px) { .md\:grid-cols-3 { grid-template-columns: repeat(3, minmax(0, 1fr)); } }
+        .gap-8 { gap: 2rem; }
+        .w-32 { width: 8rem; }
+        .h-32 { height: 8rem; }
+        .bg-purple-900\/50 { background-color: rgba(60, 10, 113, 0.5); }
+        .rounded-full { border-radius: 9999px; }
+        .text-6xl { font-size: 3.75rem; line-height: 1; }
+        .text-pink-400 { color: #F472B6; }
+        .md\:col-span-2 { grid-column: span 2 / span 2; }
+        .italic { font-style: italic; }
+        .border-l-4 { border-left-width: 4px; }
+        .border-pink-500 { border-color: #EC4899; }
+        .pl-4 { padding-left: 1rem; }
+        .sm\:grid-cols-2 { grid-template-columns: repeat(1, minmax(0, 1fr)); } /* Default, overridden by media query */
+        @media (min-width: 640px) { .sm\:grid-cols-2 { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
+        .space-y-2 > :not([hidden]) ~ :not([hidden]) { margin-top: 0.5rem; margin-bottom: 0px; }
+        .list-disc { list-style-type: disc; }
+        .list-inside { list-style-position: inside; }
+        .text-gray-600 { color: #4B5563; }
+        .text-gray-700 { color: #374151; }
+        .relative { position: relative; }
+        .border-l-2 { border-left-width: 2px; }
+        .border-dashed { border-style: dashed; }
+        .absolute { position: absolute; }
+        .h-full { height: 100%; }
+        .left-4 { left: 1rem; }
+        .md\:left-1\/2 { left: 1rem; } /* Default, overridden by media query */
+        @media (min-width: 768px) { .md\:left-1\/2 { left: 50%; } }
+        .md\:-translate-x-1\/2 { transform: translate(-50%, 0); }
+        .space-y-16 > :not([hidden]) ~ :not([hidden]) { margin-top: 4rem; margin-bottom: 0px; }
+        .w-8 { width: 2rem; }
+        .h-8 { height: 2rem; }
+        .bg-purple-600 { background-color: #9333EA; }
+        .z-10 { z-index: 10; }
+        .pl-8 { padding-left: 2rem; }
+        .md\:pl-12 { padding-left: 2rem; } /* Default, overridden by media query */
+        @media (min-width: 768px) { .md\:pl-12 { padding-left: 3rem; } }
+        .shadow-md { box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06); } /* Already defined */
+        .gap-8 { gap: 2rem; } /* Already defined */
+        .md\:grid-cols-2 { grid-template-columns: repeat(1, minmax(0, 1fr)); } /* Default, overridden by media query */
+        @media (min-width: 768px) { .md\:grid-cols-2 { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
+        .mb-16 { margin-bottom: 4rem; }
+        .text-sm { font-size: 0.875rem; line-height: 1.25rem; }
+        .text-gray-500 { color: #6B7280; }
+        .space-y-4 > :not([hidden]) ~ :not([hidden]) { margin-top: 1rem; margin-bottom: 0px; }
+        .bg-gray-700 { background-color: #374151; }
+        .border-gray-600 { border-color: #4B5563; }
+        .md\:col-span-2 { grid-column: span 2 / span 2; } /* Already defined */
+        .lg\:grid-cols-3 { grid-template-columns: repeat(1, minmax(0, 1fr)); } /* Default, overridden by media query */
+        @media (min-width: 1024px) { .lg\:grid-cols-3 { grid-template-columns: repeat(3, minmax(0, 1fr)); } }
+        .shadow-sm { box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05); }
+        .mr-3 { margin-right: 0.75rem; }
+        .text-xl { font-size: 1.25rem; line-height: 1.75rem; } /* Already defined */
+        .text-pink-400 { color: #F472B6; } /* Already defined */
+        .text-gray-200 { color: #E5E7EB; } /* Already defined */
+        .text-gray-300 { color: #D1D5DB; } /* Already defined */
+        .loop-circle { /* Already defined, but for clarity */
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            font-weight: bold;
+            color: white;
+            background-color: #A855F7; /* Purple-500 */
+            margin: 0 auto;
+            border: 3px solid #C026D3; /* Purple-600 */
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+            word-break: break-word;
+            padding: 5px;
+            font-size: 0.875rem;
+            line-height: 1.2;
+        }
+        .loop-arrow { /* Already defined, but for clarity */
+            width: 2px;
+            height: 40px;
+            background-color: #C026D3; /* Purple-600 */
+            margin: 0 auto;
+        }
+        .text-gray-200 { color: #E5E7EB; } /* Already defined */
+        .font-semibold { font-weight: 600; }
+        .email-stage-card { /* Already defined, but for clarity */
+            background-color: #1F2937;
+            border: 1px solid #374151;
+            border-radius: 0.75rem;
+            padding: 1.5rem;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+            transition: transform 0.2s ease-in-out;
+        }
+        .email-stage-card:hover { transform: translateY(-5px); }
+        .email-stage-card h3 { color: #EC4899; }
+        .email-stage-card p { color: #D1D5DB; }
+        .email-generator-section { /* Already defined, but for clarity */
+            background-color: #1F2937;
+            border-radius: 1rem;
+            padding: 2.5rem;
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+            border: 1px solid #374151;
+        }
+        .email-generator-section select, .email-generator-section button {
+            border-radius: 0.5rem;
+            font-weight: 600;
+            transition: all 0.2s ease-in-out;
+        }
+        .email-generator-section select {
+            background-color: #2D3748;
+            border: 1px solid #4B5563;
+            color: #D1D5DB;
+            padding: 0.75rem 1rem;
+        }
+        .email-generator-section button {
+            background-color: #EC4899;
+            color: white;
+            padding: 0.75rem 1.5rem;
+        }
+        .email-generator-section button:hover {
+            background-color: #D946EF;
+            transform: translateY(-2px);
+        }
+        .email-output-box { /* Already defined, but for clarity */
+            background-color: #2D3748;
+            border: 1px solid #4B5563;
+            border-radius: 0.5rem;
+            padding: 1.5rem;
+            min-height: 120px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            color: #D1D5DB;
+            font-style: italic;
+        }
+        .email-output-box pre {
+            white-space: pre-wrap;
+            text-align: left;
+            width: 100%;
+            font-style: normal;
+        }
+        .animate-spin { animation: spin 1s linear infinite; }
+        @keyframes spin { from { transform: rotate(0deg); } to { transform: rotate(360deg); } }
+        .inline-block { display: inline-block; }
+        .w-8 { width: 2rem; }
+        .h-8 { height: 2rem; }
+        .border-4 { border-width: 4px; }
+        .border-pink-400 { border-color: #F472B6; }
+        .border-t-transparent { border-top-color: transparent; }
+        .text-red-500 { color: #EF4444; }
+        .text-5xl { font-size: 3rem; line-height: 1; }
+        .my-3 { margin-top: 0.75rem; margin-bottom: 0.75rem; }
+        .lg\:grid-cols-4 { grid-template-columns: repeat(1, minmax(0, 1fr)); } /* Default, overridden by media query */
+        @media (min-width: 1024px) { .lg\:grid-cols-4 { grid-template-columns: repeat(4, minmax(0, 1fr)); } }
+    </style>
+</head>
+<body>
+
+    <header class="bg-gray-900 shadow-md sticky top-0 z-50">
+        <nav class="container mx-auto px-6 py-3 flex justify-between items-center">
+            <div class="text-2xl font-bold text-white">BCS 2025</div>
+            <div class="hidden md:flex space-x-8">
+                <a href="#mision" class="text-gray-300 hover:text-pink-400">Misión</a>
+                <a href="#audiencia" class="text-gray-300 hover:text-pink-400">Audiencia</a>
+                <a href="#viaje" class="text-gray-300 hover:text-pink-400">Viaje del Cliente</a>
+                <a href="#motor" class="text-gray-300 hover:text-pink-400">Estrategia</a>
+                <a href="#loops" class="text-gray-300 hover:text-pink-400">Growth Loops</a>
+                <a href="#experimento" class="text-gray-300 hover:text-pink-400">Experimento</a>
+                <a href="#medicion" class="text-gray-300 hover:text-pink-400">Medición</a>
+            </div>
+        </nav>
+    </header>
+
+    <main class="container mx-auto px-6 py-8">
+
+        <section id="mision" class="text-center py-16">
+            <h1 class="text-4xl md:text-5xl font-extrabold text-white">Estrategia de Growth Marketing</h1>
+            <p class="text-xl text-gray-300 mt-2">Breast Cancer Summit 2025</p>
+            <p class="max-w-3xl mx-auto mt-6 text-lg text-gray-400">
+                Esta aplicación detalla la estrategia integral para posicionar el Breast Cancer Summit 2025 como el evento líder en oncología de mama en Chile. Nuestro plan se centra en atraer, convertir y deleitar a la comunidad médica a través de un enfoque metódico y basado en datos.
+            </p>
+            <div class="mt-12">
+                <h2 class="text-2xl font-bold text-gray-200">Nuestra Misión y North Star Metric</h2>
+                <p class="max-w-3xl mx-auto mt-4 text-gray-400">
+                    La North Star Metric es el indicador clave que guía todas nuestras acciones, representando el valor principal que buscamos entregar a nuestros usuarios. Para el Breast Cancer Summit 2025, nuestro objetivo es claro y medible.
+                </p>
+                <div class="mt-4 bg-gray-800 rounded-xl p-8 max-w-md mx-auto shadow-lg border border-gray-700">
+                    <p class="text-7xl font-black gradient-text">100</p>
+                    <p class="text-xl font-light text-gray-300 mt-2">Oncólogos destacados de Chile registrados y accediendo al contenido exclusivo del Summit.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="audiencia" class="py-16 bg-gray-900 rounded-lg">
+            <h2 class="text-3xl font-bold text-center text-white mb-12">El Público Objetivo: Conociendo al Dr. Juan Pérez</h2>
+            <p class="max-w-3xl mx-auto text-lg text-gray-400 text-center mb-8">
+                Para diseñar una estrategia efectiva, es fundamental comprender a quién nos dirigimos. Nuestro Buyer Persona, el Dr. Juan Pérez, representa a nuestro público ideal, con sus necesidades, frustraciones y motivaciones.
+            </p>
+            <div class="max-w-4xl mx-auto bg-gray-800 rounded-lg shadow-xl p-8 grid grid-cols-1 md:grid-cols-3 gap-8 items-center border border-gray-700">
+                <div class="text-center">
+                    <div class="w-32 h-32 mx-auto bg-purple-900/50 rounded-full flex items-center justify-center">
+                        <span class="text-6xl">👨‍⚕️</span>
+                    </div>
+                    <h3 class="text-2xl font-bold mt-4 text-white">Dr. Juan Pérez</h3>
+                    <p class="text-pink-400 font-semibold">Oncólogo Médico, 45 años</p>
+                </div>
+                <div class="md:col-span-2">
+                    <p class="text-lg italic text-gray-300 border-l-4 border-pink-500 pl-4">
+                        “Mi prioridad es ofrecer a mis pacientes tratamientos de vanguardia. Necesito información confiable y aplicable, sin tener que viajar al extranjero para obtenerla.”
+                    </p>
+                    <div class="mt-6 grid grid-cols-1 sm:grid-cols-2 gap-6">
+                        <div>
+                            <h4 class="font-bold text-lg text-gray-200">Necesidades Clave</h4>
+                            <ul class="mt-2 space-y-2 list-disc list-inside text-gray-300">
+                                <li>Información clínica actualizada</li>
+                                <li>Formato de aprendizaje flexible</li>
+                                <li>Networking con expertos</li>
+                            </ul>
+                        </div>
+                        <div>
+                            <h4 class="font-bold text-lg text-gray-200">Frustraciones</h4>
+                            <ul class="mt-2 space-y-2 list-disc list-inside text-gray-300">
+                                <li>Falta de tiempo</li>
+                                <li>Exceso de información irrelevante</li>
+                                <li>Costos y logística de viajes</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="viaje" class="py-16">
+            <h2 class="text-3xl font-bold text-center text-white mb-4">El Viaje del Cliente</h2>
+            <p class="max-w-3xl mx-auto text-lg text-gray-400 text-center mb-16">
+                Hemos diseñado un mapa de viaje para guiar al Dr. Pérez desde el primer contacto hasta convertirlo en un promotor del evento, asegurando una experiencia de valor en cada etapa.
+            </p>
+            <div class="relative">
+                <div class="border-l-2 border-dashed border-pink-500 absolute h-full top-0 left-4 md:left-1/2 md:-translate-x-1/2"></div>
+                <div class="space-y-16">
+                    <div class="flex items-center w-full">
+                        <div class="w-8 h-8 bg-purple-600 text-white rounded-full flex items-center justify-center z-10">1</div>
+                        <div class="w-full pl-8 md:pl-12">
+                            <div class="bg-gray-800 p-6 rounded-lg shadow-md border border-gray-700">
+                                <h3 class="font-bold text-xl text-pink-400">Conciencia</h3>
+                                <p class="mt-2 text-gray-300">Atraer la atención con contenido de alto valor (infografías, videos) en canales profesionales como LinkedIn y boletines médicos.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="flex items-center w-full">
+                        <div class="w-8 h-8 bg-purple-600 text-white rounded-full flex items-center justify-center z-10">2</div>
+                        <div class="w-full pl-8 md:pl-12">
+                            <div class="bg-gray-800 p-6 rounded-lg shadow-md border border-gray-700">
+                                <h3 class="font-bold text-xl text-pink-400">Consideración</h3>
+                                <p class="mt-2 text-gray-300">Demostrar el valor del Summit con detalles sobre ponentes, programa y testimonios, posicionándolo como la mejor opción.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="flex items-center w-full">
+                        <div class="w-8 h-8 bg-purple-600 text-white rounded-full flex items-center justify-center z-10">3</div>
+                        <div class="w-full pl-8 md:pl-12">
+                            <div class="bg-gray-800 p-6 rounded-lg shadow-md border border-gray-700">
+                                <h3 class="font-bold text-xl text-pink-400">Decisión</h3>
+                                <p class="mt-2 text-gray-300">Facilitar la inscripción con un proceso simple, ofertas de registro anticipado y comunicación que genere sentido de urgencia.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="flex items-center w-full">
+                        <div class="w-8 h-8 bg-purple-600 text-white rounded-full flex items-center justify-center z-10">4</div>
+                        <div class="w-full pl-8 md:pl-12">
+                            <div class="bg-gray-800 p-6 rounded-lg shadow-md border border-gray-700">
+                                <h3 class="font-bold text-xl text-pink-400">Retención</h3>
+                                <p class="mt-2 text-gray-300">Maximizar el valor post-evento con acceso a grabaciones, materiales exclusivos y una comunidad online activa.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="flex items-center w-full">
+                        <div class="w-8 h-8 bg-purple-600 text-white rounded-full flex items-center justify-center z-10">5</div>
+                        <div class="w-full pl-8 md:pl-12">
+                            <div class="bg-gray-800 p-6 rounded-lg shadow-md border border-gray-700">
+                                <h3 class="font-bold text-xl text-pink-400">Recomendación</h3>
+                                <p class="mt-2 text-gray-300">Convertir a los asistentes satisfechos en embajadores, incentivando la publicación de opiniones y la referencia a colegas.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="motor" class="py-16 bg-gray-900 rounded-lg">
+            <h2 class="text-3xl font-bold text-center text-white mb-4">El Motor de Crecimiento: Canales y Tácticas</h2>
+            <p class="max-w-3xl mx-auto text-lg text-gray-400 text-center mb-16">
+                Nuestra estrategia de Growth Marketing se apoya en un mix de canales y técnicas probadas para maximizar el alcance y la conversión de oncólogos, optimizando cada interacción.
+            </p>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <div class="bg-gray-800 rounded-lg shadow-md p-6 border border-gray-700">
+                    <h3 class="text-2xl font-bold mb-4 text-center text-white">Distribución de Inversión Publicitaria</h3>
+                    <p class="text-sm text-gray-400 text-center mb-4">Asignación de presupuesto durante 6 meses.</p>
+                    <div class="chart-container">
+                        <canvas id="investmentChart"></canvas>
+                    </div>
+                    <p class="text-sm text-gray-500 mt-4 text-center">Este gráfico de dona muestra el porcentaje del presupuesto publicitario asignado a cada plataforma. La mayor inversión se destina a Google Ads para capturar la demanda activa, seguida por Meta y LinkedIn por sus capacidades de segmentación y retargeting.</p>
+                </div>
+                <div class="bg-gray-800 rounded-lg shadow-md p-6 border border-gray-700">
+                    <h3 class="text-2xl font-bold mb-4 text-center text-white">Técnicas Clave de Growth Marketing</h3>
+                    <p class="text-sm text-gray-400 text-center mb-4">Estrategias probadas para impulsar la adquisición y el engagement.</p>
+                    <div class="space-y-4 mt-6">
+                        <div class="bg-gray-700 rounded-lg p-4 border border-gray-600">
+                            <h4 class="font-bold text-lg text-gray-200">🚀 Marketing de Contenidos Virales</h4>
+                            <p class="text-gray-300 text-sm">Crear infografías y videos de alto valor para difusión orgánica en redes profesionales y grupos médicos.</p>
+                        </div>
+                        <div class="bg-gray-700 rounded-lg p-4 border border-gray-600">
+                            <h4 class="font-bold text-lg">🎮 Gamificación para el Engagement</h4>
+                            <p class="text-gray-300 text-sm">Implementar quizzes y desafíos en el pre-evento y durante el Summit para aumentar la participación y la retención.</p>
+                        </div>
+                        <div class="bg-gray-700 rounded-lg p-4 border border-gray-600">
+                            <h4 class="font-bold text-lg">✅ Optimización de Conversión (CRO)</h4>
+                            <p class="text-gray-300 text-sm">Realizar A/B testing riguroso en landing pages y simplificar formularios de registro para maximizar la tasa de captación.</p>
+                        </div>
+                         <div class="bg-gray-700 rounded-lg p-4 border border-gray-600">
+                            <h4 class="font-bold text-lg">📢 Programas de Referidos y Embajadores</h4>
+                            <p class="text-gray-300 text-sm">Incentivar a los asistentes satisfechos a invitar a colegas, capitalizando la confianza y la red profesional existente.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="mt-12 bg-gray-800 rounded-lg shadow-md p-6 border border-gray-700">
+                <h3 class="text-2xl font-bold mb-4 text-center text-white">SEO y Optimización de Páginas de Aterrizaje</h3>
+                <p class="max-w-3xl mx-auto text-lg text-gray-400 text-center mb-8">
+                    La visibilidad orgánica y la experiencia en el sitio son cruciales. Nuestra estrategia de SEO y el diseño de landing pages están alineados para atraer tráfico cualificado y convertirlo en registros.
+                </p>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                    <div class="bg-gray-700 rounded-lg shadow-sm p-6 border border-gray-600">
+                        <h4 class="text-xl font-bold mb-4 text-center text-gray-200">Pilares del SEO</h4>
+                        <ul class="space-y-3 text-gray-300">
+                            <li class="flex items-center"><span class="text-pink-400 mr-3 text-xl">🔍</span> <span>**Investigación de Palabras Clave:** Análisis profundo de términos relevantes para oncólogos y congresos médicos.</span></li>
+                            <li class="flex items-center"><span class="text-pink-400 mr-3 text-xl">📝</span> <span>**SEO On-Page:** Optimización de contenido, meta descripciones, títulos y URLs amigables.</span></li>
+                            <li class="flex items-center"><span class="text-pink-400 mr-3 text-xl">⚡</span> <span>**SEO Técnico:** Velocidad de carga, compatibilidad móvil y estructura del sitio para rastreo óptimo.</span></li>
+                            <li class="flex items-center"><span class="text-pink-400 mr-3 text-xl">🔗</span> <span>**SEO Off-Page (Link Building):** Alianzas con instituciones médicas y fundaciones para backlinks de alta autoridad.</span></li>
+                        </ul>
+                    </div>
+                    <div class="bg-gray-700 rounded-lg shadow-sm p-6 border border-gray-600">
+                        <h4 class="text-xl font-bold mb-4 text-center text-gray-200">Optimización de Landing Pages</h4>
+                        <ul class="space-y-3 text-gray-300">
+                            <li class="flex items-center"><span class="text-pink-400 mr-3 text-xl">🎯</span> <span>**Relevancia y Enfoque:** Cada página diseñada con un único objetivo de conversión.</span></li>
+                            <li class="flex items-center"><span class="text-pink-400 mr-3 text-xl">✨</span> <span>**Propuesta de Valor Clara:** Beneficios del evento concisos y destacados.</span></li>
+                            <li class="flex items-center"><span class="text-pink-400 mr-3 text-xl">✍️</span> <span>**Contenido Persuasivo:** Títulos impactantes, bullet points con beneficios clave y testimonios.</span></li>
+                            <li class="flex items-center"><span class="text-pink-400 mr-3 text-xl">✅</span> <span>**Formularios Optimizados:** Campos mínimos, mensajes claros y CTAs prominentes.</span></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="loops" class="py-16">
+            <h2 class="text-3xl font-bold text-center text-white mb-4">Growth Loops: Adquisición Basada en Referidos</h2>
+            <p class="max-w-3xl mx-auto text-lg text-gray-400 text-center mb-16">
+                Nuestro motor de crecimiento principal es el ciclo de adquisición basado en referidos, capitalizando la confianza entre colegas para una expansión orgánica y sostenible.
+            </p>
+            <div class="flex flex-col items-center justify-center space-y-8">
+                <div class="loop-circle" style="background-color: #A855F7; border-color: #C026D3;">Asistentes Satisfechos 😊</div>
+                <div class="loop-arrow" style="background-color: #C026D3;"></div>
+                <div class="text-center text-gray-200 font-semibold text-lg">Participación y Valoración</div>
+                <div class="loop-arrow" style="background-color: #C026D3;"></div>
+                <div class="loop-circle" style="background-color: #A855F7; border-color: #C026D3;">Promoción del Evento 📢</div>
+                <div class="loop-arrow" style="background-color: #C026D3;"></div>
+                <div class="text-center text-gray-200 font-semibold text-lg">Nuevos Registros por Referencia �‍⚕️</div>
+                <div class="loop-arrow" style="transform: rotate(180deg); background-color: #C026D3;"></div>
+                <div class="text-center text-gray-200 font-semibold text-lg">Fortalecimiento de Marca 👍</div>
+                <div class="loop-arrow" style="transform: rotate(180deg); background-color: #C026D3;"></div>
+                <div class="text-center text-gray-200 font-semibold text-lg">Más Asistentes Satisfechos</div>
+                <div class="loop-arrow" style="background-color: #C026D3;"></div>
+            </div>
+        </section>
+
+        <section id="email-marketing" class="py-16 bg-gray-900 rounded-lg">
+            <h2 class="text-3xl font-bold text-center text-white mb-4">Estrategia de Email Marketing: Un Viaje Personalizado</h2>
+            <p class="max-w-3xl mx-auto text-lg text-gray-400 text-center mb-8">
+                El email marketing es una herramienta fundamental que acompaña al Dr. Juan Pérez en cada etapa de su viaje, con comunicaciones segmentadas y personalizadas para maximizar el engagement y la conversión.
+            </p>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <div class="email-stage-card">
+                    <h3 class="font-bold text-xl mb-2">Conciencia (Semanal)</h3>
+                    <p class="text-gray-300">Introducción al problema y solución, contenido educativo (infografías, videos) para generar interés.</p>
+                </div>
+                <div class="email-stage-card">
+                    <h3 class="font-bold text-xl mb-2">Consideración (2x/semana)</h3>
+                    <p class="text-gray-300">Presentación del programa y ponentes, testimonios, beneficios clave del Summit (híbrido, certificación).</p>
+                </div>
+                <div class="email-stage-card">
+                    <h3 class="font-bold text-xl mb-2">Decisión (Urgencia)</h3>
+                    <p class="text-gray-300">Recordatorios de últimos cupos, FAQs y soporte, confirmación de registro y próximos pasos.</p>
+                </div>
+                <div class="email-stage-card">
+                    <h3 class="font-bold text-xl mb-2">Retención (Semanal post-evento)</h3>
+                    <p class="text-gray-300">Agradecimiento, acceso a materiales exclusivos, resumen del evento, encuesta de satisfacción, invitación a la comunidad.</p>
+                </div>
+                <div class="email-stage-card">
+                    <h3 class="font-bold text-xl mb-2">Recomendación (Mensual/Bimensual)</h3>
+                    <p class="text-gray-300">Invitación a programas de referidos, solicitud de testimonios, anuncio de futuras ediciones y eventos relacionados.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="experimento" class="py-16">
+            <h2 class="text-3xl font-bold text-center text-white mb-4">Diseño del Experimento de Growth: Activación de Residentes</h2>
+            <p class="max-w-3xl mx-auto text-lg text-gray-400 text-center mb-8">
+                Para optimizar la activación de leads en el segmento de residentes, hemos diseñado un experimento de Growth centrado en una oferta de valor diferenciada y medible.
+            </p>
+            <div class="bg-gray-800 rounded-lg shadow-xl p-8 border border-gray-700">
+                <h3 class="text-2xl font-bold text-pink-400 mb-6">Hipótesis Clara</h3>
+                <p class="text-gray-300 mb-8 italic">
+                    "Si ofrecemos una serie de mini-masterclasses gratuitas, pre-evento y exclusivas para residentes, y promocionamos explícitamente la oportunidad de networking con ponentes senior, entonces la tasa de registro de este segmento aumentará en un 15%."
+                </p>
+
+                <h3 class="text-2xl font-bold text-pink-400 mb-6">Diseño Experimental</h3>
+                <div class="space-y-6">
+                    <div class="flex items-start">
+                        <div class="w-10 h-10 bg-purple-600 text-white rounded-full flex items-center justify-center text-lg font-bold mr-4 flex-shrink-0">🎯</div>
+                        <div>
+                            <h4 class="font-bold text-xl text-gray-200">Objetivos (OKRs)</h4>
+                            <p class="text-gray-300 mt-1">Incrementar la tasa de registro de residentes del X% al X+15% en 2 meses, y su participación en actividades pre-evento en un 20%.</p>
+                        </div>
+                    </div>
+                    <div class="flex items-start">
+                        <div class="w-10 h-10 bg-purple-600 text-white rounded-full flex items-center justify-center text-lg font-bold mr-4 flex-shrink-0">📊</div>
+                        <div>
+                            <h4 class="font-bold text-xl text-gray-200">Variables</h4>
+                            <p class="text-gray-300 mt-1">**Independiente:** Mini-masterclasses gratuitas y promoción de networking. **Dependiente:** Tasa de registro y participación de residentes.</p>
+                        </div>
+                    </div>
+                    <div class="flex items-start">
+                        <div class="w-10 h-10 bg-purple-600 text-white rounded-full flex items-center justify-center text-lg font-bold mr-4 flex-shrink-0">🧪</div>
+                        <div>
+                            <h4 class="font-bold text-xl text-gray-200">Metodología</h4>
+                            <p class="text-gray-300 mt-1">Comparación entre Grupo de Control (A) y Grupo Experimental (B) durante 2 meses, con comunicación segmentada por email y LinkedIn.</p>
+                        </div>
+                    </div>
+                    <div class="flex items-start">
+                        <div class="w-10 h-10 bg-purple-600 text-white rounded-full flex items-center justify-center text-lg font-bold mr-4 flex-shrink-0">📈</div>
+                        <div>
+                            <h4 class="font-bold text-xl text-gray-200">Análisis de Datos y Conclusiones</h4>
+                            <p class="text-gray-300 mt-1">Comparación de tasas de registro (prueba t), análisis cualitativo de feedback. Decisiones de escalado o iteración para futuros experimentos.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="medicion" class="py-16 bg-gray-900 rounded-lg">
+            <h2 class="text-3xl font-bold text-center text-white mb-4">Medición del Éxito: Reporte de Performance</h2>
+            <p class="max-w-3xl mx-auto text-lg text-gray-400 text-center mb-8">
+                Un reporte mensual sólido nos permitirá medir el rendimiento y el éxito de la estrategia de Growth Marketing, asegurando una iteración constante y la toma de decisiones informadas.
+            </p>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+                <div class="bg-gray-800 rounded-lg p-6 text-center shadow-md border border-gray-700">
+                    <h3 class="font-bold text-xl text-gray-200">Adquisición</h3>
+                    <p class="text-5xl font-black gradient-text my-3">750+</p>
+                    <p class="text-gray-300">Leads Generados (Target)</p>
+                </div>
+                <div class="bg-gray-800 rounded-lg p-6 text-center shadow-md border border-gray-700">
+                    <h3 class="font-bold text-xl text-gray-200">Activación</h3>
+                    <p class="text-5xl font-black gradient-text my-3">15%</p>
+                    <p class="text-gray-300">Tasa de Registro (Target)</p>
+                </div>
+                <div class="bg-gray-800 rounded-lg p-6 text-center shadow-md border border-gray-700">
+                    <h3 class="font-bold text-xl text-gray-200">Retención</h3>
+                    <p class="text-5xl font-black gradient-text my-3">40+</p>
+                    <p class="text-gray-300">NPS (Target)</p>
+                </div>
+                <div class="bg-gray-800 rounded-lg p-6 text-center shadow-md border border-gray-700">
+                    <h3 class="font-bold text-xl text-gray-200">Referencia</h3>
+                    <p class="text-5xl font-black gradient-text my-3">20%</p>
+                    <p class="text-gray-300">Registros por Referidos (Target)</p>
+                </div>
+            </div>
+             <div class="mt-12 bg-gray-800 rounded-lg shadow-md p-6 border border-gray-700">
+                <h3 class="text-2xl font-bold mb-4 text-center text-white">Proyección de Registros (6 Meses)</h3>
+                <p class="text-sm text-gray-400 text-center mb-4">Proyección de crecimiento acumulado de oncólogos registrados.</p>
+                <div class="chart-container">
+                    <canvas id="registrationForecastChart"></canvas>
+                </div>
+                <p class="text-sm text-gray-500 mt-4 text-center">Este gráfico de área muestra la proyección de crecimiento acumulado de registros de oncólogos durante los 6 meses de campaña, con el objetivo final de alcanzar nuestra North Star Metric de 100 profesionales registrados.</p>
+            </div>
+        </section>
+
+        <section id="conclusion" class="text-center py-16 bg-gray-800 rounded-lg shadow-xl border border-gray-700">
+            <h2 class="text-3xl font-bold text-white mb-4">Conclusión General</h2>
+            <p class="max-w-3xl mx-auto text-lg text-gray-300">
+                Este plan integral de Growth Marketing, fundamentado en un análisis de datos riguroso y una experimentación constante, no solo busca la optimización de los canales de adquisición y la eficiencia de la inversión, sino que posiciona al Breast Cancer Summit 2025 como el epicentro ineludible de la vanguardia científica en oncología local, catalizando la expansión del conocimiento y el avance colectivo para mejorar el diagnóstico, tratamiento y la calidad de vida de los pacientes con cáncer de mama en Chile.
+            </p>
+        </section>
+
+    </main>
+
+    <footer class="text-center p-8 mt-12 bg-gray-900 border-t border-purple-800 text-gray-400">
+        <p>CURSO GROWTH MARKETING - ENTREGA FINAL - NATALIA GAGGERO - Julio de 2025</p>
+    </footer>
+
+    <script>
+        const tooltipTitleCallback = (tooltipItems) => {
+            const item = tooltipItems[0];
+            let label = item.chart.data.labels[item.dataIndex];
+            if (Array.isArray(label)) {
+                return label.join(' ');
+            }
+            return label;
+        };
+        
+        const commonPlugins = {
+            legend: {
+                labels: {
+                    color: '#D1D5DB' /* Light gray for legend text */
+                }
+            },
+            tooltip: {
+                callbacks: {
+                    title: tooltipTitleCallback
+                }
+            }
+        };
+
+        const investmentCtx = document.getElementById('investmentChart').getContext('2d');
+        new Chart(investmentCtx, {
+            type: 'doughnut',
+            data: {
+                labels: ['Google Ads', 'Meta Ads', 'LinkedIn Ads', 'Spotify Ads'],
+                datasets: [{
+                    label: 'Distribución de Inversión',
+                    data: [40, 30, 20, 10],
+                    backgroundColor: [
+                        '#EC4899', /* Pink-600 */
+                        '#D946EF', /* Purple-600 (lighter) */
+                        '#A855F7', /* Purple-500 */
+                        '#7C3AED'  /* Purple-400 (darker) */
+                    ],
+                    borderColor: '#111827', /* Dark gray for borders */
+                    borderWidth: 4,
+                    hoverOffset: 8
+                }]
+            },
+            options: {
+                responsive: true,
+                maintainAspectRatio: false,
+                plugins: {
+                    ...commonPlugins,
+                    legend: {
+                        position: 'bottom',
+                        labels: {
+                           color: '#D1D5DB',
+                           font: {
+                               size: 14
+                           }
+                        }
+                    }
+                },
+                cutout: '60%'
+            }
+        });
+
+        const registrationForecastCtx = document.getElementById('registrationForecastChart').getContext('2d');
+        new Chart(registrationForecastCtx, {
+            type: 'line',
+            data: {
+                labels: ['Mes 1', 'Mes 2', 'Mes 3', 'Mes 4', 'Mes 5', 'Mes 6'],
+                datasets: [{
+                    label: 'Oncólogos Registrados (Acumulado)',
+                    data: [10, 25, 45, 65, 85, 100],
+                    fill: true,
+                    backgroundColor: 'rgba(236, 72, 153, 0.2)', /* Pink with transparency */
+                    borderColor: '#EC4899', /* Pink-600 */
+                    tension: 0.4,
+                    pointBackgroundColor: '#EC4899', /* Pink for data points */
+                    pointBorderColor: '#fff', /* White border for data points */
+                    pointHoverBackgroundColor: '#fff', /* White on hover */
+                    pointHoverBorderColor: '#EC4899' /* Pink on hover */
+                }]
+            },
+            options: {
+                responsive: true,
+                maintainAspectRatio: false,
+                plugins: commonPlugins,
+                scales: {
+                    y: {
+                        beginAtZero: true,
+                        grid: {
+                            color: 'rgba(255, 255, 255, 0.1)' /* Light grid lines */
+                        },
+                        ticks: {
+                            color: '#D1D5DB' /* Light gray for Y-axis labels */
+                        },
+                        title: {
+                            display: true,
+                            text: 'Nº de Registros',
+                            color: '#F9A8D4' /* Light pink for Y-axis title */
+                        }
+                    },
+                    x: {
+                        grid: {
+                            color: 'rgba(255, 255, 255, 0.1)' /* Light grid lines */
+                        },
+                        ticks: {
+                            color: '#D1D5DB' /* Light gray for X-axis labels */
+                        }
+                    }
+                }
+            }
+        });
+    </script>
+
+</body>
+</html>
+�
